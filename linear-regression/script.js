@@ -32,7 +32,7 @@ window.onload = async () => {
             ['loss']
         )
     });
-
+    // 模型进行预测: 将待预测的数据转化为Tensor, 使用训练好的模型进行训练
     const output = model.predict(tf.tensor([5]));
     alert(`如果 x 为 5，那么预测 y 为 ${output.dataSync()[0]}`);
 };
